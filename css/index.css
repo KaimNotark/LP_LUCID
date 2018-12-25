@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  top: 40px;
+  padding-top: 40px;
   width: 100%;
   height: 30px;
   font-family: 'Myriad Pro Regular', sans-serif;
@@ -111,8 +111,8 @@ body {
 
 .hello {
   width: 100%;
-  height: 640px;
-  padding-top: 130px;
+  height: 615px;
+  padding-top: 100px;
   font-family: 'Myriad Pro Regular', sans-serif;
 }
 
@@ -189,12 +189,7 @@ body {
   height: 575px;
   font-family: 'Myriad Pro Regular', sans-serif;
   background-color: #ffffff;
-}
-
-.container {
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
+  border: 1px solid #fff;
 }
 
 .overview__title {
@@ -295,6 +290,14 @@ body {
   text-align: center;
 }
 
+.line {
+  border: none;
+  color: #ededed;
+  background-color: #ededed;
+  height: 3px;
+  margin: 0;
+}
+
 .details {
   width: 100%;
   height: 710px;
@@ -302,26 +305,15 @@ body {
   background-color: #ffffff;
 }
 
-.container {
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.column {
-  margin-right: 70px;
-
-}
-
 .details__image {
   width: 100%;
   max-width: 480px;
   margin-top: 70px;
+  margin-right: 100px;
+}
+
+.details__column {
+  margin-right: 70px;
 }
 
 .details__title {
@@ -344,6 +336,7 @@ body {
   letter-spacing: 1px;
   text-align: left;
 }
+
 .details__devider {
   position: relative;
   margin: 0;
@@ -351,6 +344,7 @@ body {
   height: 4px;
   left: 0;
 }
+
 .details__devider::before {
   content: "";
   position: absolute;
@@ -368,6 +362,7 @@ body {
   height: 2px;
   background-color: #008ed6;
 }
+
 .details__content {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -379,7 +374,7 @@ body {
   text-align: left;
 }
 
-.details-list{
+.details-list {
   display: block;
   padding: 0;
 }
@@ -388,7 +383,7 @@ body {
   line-height: 2;
   list-style: none;
   background: url(../img/cup.png) no-repeat 0 6px;
-  padding-left: 25px;     
+  padding-left: 25px;
 }
 
 .details-list__item_mouse {
@@ -427,24 +422,9 @@ body {
 
 .customize {
   width: 100%;
-  height: 545px;
+  height: 525px;
   font-family: 'Myriad Pro Regular', sans-serif;
   background-color: #f2f2f2;
-}
-
-.container {
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.column {
-
 }
 
 .customize__image {
@@ -473,6 +453,7 @@ body {
   letter-spacing: 1px;
   text-align: left;
 }
+
 .customize__devider {
   position: relative;
   margin: 0;
@@ -480,6 +461,7 @@ body {
   height: 4px;
   left: 0;
 }
+
 .customize__devider::before {
   content: "";
   position: absolute;
@@ -497,6 +479,7 @@ body {
   height: 2px;
   background-color: #008ed6;
 }
+
 .customize__content {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -516,12 +499,7 @@ body {
   background-image: url('../img/warstwa8.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.container {
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
+  border-bottom: 1px solid #15141a;
 }
 
 .pricings__title {
@@ -544,12 +522,14 @@ body {
   letter-spacing: 1px;
   text-align: center;
 }
+
 .pricings__devider {
   position: relative;
   margin: 0 auto;
   width: 45px;
   height: 4px;
 }
+
 .pricings__devider::before {
   content: "";
   position: absolute;
@@ -570,33 +550,39 @@ body {
 
 /*  css for flickity */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .carousel {
- margin-top: 70px;
+  margin-top: 70px;
 }
 
 .carousel__cell {
-width: 100%;
-height: 300px;
-border-radius: 5px;
-counter-increment: gallery-cell;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
 
 
 }
+
 .carousel__content {
-margin-bottom: 30px;
+  margin-bottom: 30px;
   padding-top: 5px;
   color: #fff;
   font-size: 20px;
-font-style: italic;
+  font-style: italic;
   letter-spacing: 1px;
   text-align: left;
 }
 
-@media screen and ( min-width: 768px ) {
-.carousel__cell { width: 50%; }
+@media screen and (min-width: 768px) {
+  .carousel__cell {
+    width: 50%;
+  }
 }
+
 .carousel__picture {
   display: block;
   width: 59px;
@@ -623,6 +609,43 @@ font-style: italic;
   text-transform: uppercase;
 }
 
+.like {
+  width: 100%;
+  height: 170px;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  background-color: #15141a;
+  border: 1px solid #15141a;
+}
+
+.like__text {
+  margin-top: 60px;
+  color: #fff;
+  font-size: 34px;
+  line-height: 1.0;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+._like-bold {
+  font-weight: bold;
+}
+
+._like-thin {
+  font-weight: lighter;
+}
+
+.like__buttons {
+  display: flex;
+  margin-top: 55px;
+}
+
+.price {
+  width: 100%;
+  height: 820px;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+}
 
 .price__title {
   margin-bottom: 20px;
@@ -644,12 +667,14 @@ font-style: italic;
   letter-spacing: 1px;
   text-align: center;
 }
+
 .price__devider {
   position: relative;
   margin: 0 auto;
   width: 45px;
   height: 4px;
 }
+
 .price__devider::before {
   content: "";
   position: absolute;
@@ -668,7 +693,7 @@ font-style: italic;
   background-color: #008ed6;
 }
 
-.price-list{
+.price-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -694,6 +719,7 @@ font-style: italic;
   text-align: center;
   text-transform: uppercase;
 }
+
 ._accent-blue {
   color: #008ed6;
 }
@@ -711,27 +737,32 @@ font-style: italic;
   text-align: center;
   padding-top: 25px;
 }
-._accent-white{
+
+._accent-white {
   color: #fafafa;
   background-color: #008ed6;
 }
+
 ._big {
   color: #1a1a1a;
   font-size: 58px;
   font-weight: normal;
 
 }
+
 ._big-accent-white {
   color: #fafafa;
   font-size: 58px;
   font-weight: normal;
 
 }
+
 ._sup {
   font-size: 30px;
   letter-spacing: -20px;
 
 }
+
 .price-list__content {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -741,9 +772,11 @@ font-style: italic;
   line-height: 1.6;
   text-align: center;
 }
+
 ._blue {
   color: #008ed6;
 }
+
 .price-list__button:link {
   display: block;
   height: 47px;
@@ -769,6 +802,7 @@ font-style: italic;
   border-color: #008ed6;
   color: #ffffff;
 }
+
 .price-list__accent-button:link {
   display: block;
   height: 47px;
@@ -792,7 +826,7 @@ font-style: italic;
 
 .price-list__accent-button:hover {
   background-color: #ffffff;
-  border-color: #ffffff;
+  border-color: #e0e0e0;
   color: #008ed6;
 }
 
@@ -801,12 +835,7 @@ font-style: italic;
   height: 1090px;
   font-family: 'Myriad Pro Regular', sans-serif;
   background-color: #ededed;
-}
-
-.container {
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
+  border: 1px solid #ededed;
 }
 
 .contact__title {
@@ -829,12 +858,14 @@ font-style: italic;
   letter-spacing: 1px;
   text-align: center;
 }
+
 .contact__devider {
   position: relative;
   margin: 0 auto;
   width: 45px;
   height: 4px;
 }
+
 .contact__devider::before {
   content: "";
   position: absolute;
@@ -853,10 +884,10 @@ font-style: italic;
   background-color: #008ed6;
 }
 
-.contact-list{
+.contact-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 55px;
   padding: 0;
   margin-left: 12px;
@@ -867,9 +898,11 @@ font-style: italic;
   text-align: center;
 }
 
-.contact-list__image {
-  
+._pointer {
+  margin: 0 220px;
 }
+
+.contact-list__image {}
 
 .contact-list__content {
   margin-top: 30px;
@@ -888,15 +921,16 @@ font-style: italic;
   height: 360px;
   background-color: #15141a;
   padding-top: 60px;
+  z-index: 1;
 }
-/* 
+
 .contact__image {
   height: 370px;
   margin-top: -140px;
-  background-image: url('../img/warstwa.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; 
-} */
+  /* background-image: url('../img/warstwa.jpg'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover;  */
+}
 
 .contact-form__input {
   display: block;
@@ -913,13 +947,14 @@ font-style: italic;
   border-radius: 4px;
   background-color: #15141a;
 }
+
 ._message {
   position: absolute;
   margin-left: 395px;
   margin-top: -210px;
   height: 190px;
   padding-bottom: 140px;
-  
+
 }
 
 .contact-form__button:link {
@@ -946,4 +981,39 @@ font-style: italic;
 }
 
 
-.footer {}
+.footer {
+  background-color: #15141a;
+  border: 1px solid #15141a;
+}
+
+.footer-list {
+  padding-left: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer-list__item {
+  display: block;
+  text-align: center;
+  margin: 0px 15px;
+  opacity: 0.2;
+}
+
+.footer-list__item_op {
+  display: block;
+  text-align: center;
+  margin: 0px 15px;
+}
+
+.footer-text {
+  margin-bottom: 45px;
+  margin-top: 30px;
+  color: #444348;
+  font-size: 12px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  text-align: center;
+}
