@@ -579,14 +579,66 @@
               </p>
             </li>
           </ul>
-          <form class="contact__form" action="" method="POST">
-            <input class="contact-form__input" type="text" name="name" value="NAME*" />
-            <input class="contact-form__input" type="email" name="email" value="EMAIL*" />
-            <input class="contact-form__input" type="text" name="subject" value="SUBJECT*" />
-            <input class="contact-form__input _message" type="text" name="message" value="MESSAGE*" />
-            <a href="#" class="contact-form__button _accent _left">
+          <form 
+            class="contact__form" 
+            action="" 
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            action="http://httpbin.org/get"
+            autocomplete="on"
+            id="formId">
+            <input 
+              class="contact-form__input" 
+              type="text" 
+              name="nameName" 
+              value="NAME*" 
+              autocomplete="on" 
+              required size="33" 
+              spellcheck="true"
+              tabindex="1" 
+              autofocus placeholder="Введите текст..."/>
+            <input 
+              class="contact-form__input" 
+              type="email" 
+              name="emailName"
+              autocomplete="shipping email"
+              tabindex="2"
+              list="EmailList" 
+              value="EMAIL*" />
+            <input 
+              class="contact-form__input" 
+              type="text" 
+              name="subjectName" 
+              value="SUBJECT*" 
+              autocomplete="on" 
+              required size="33"
+              tabindex="3" 
+              spellcheck="true"/>
+            <textarea 
+              class="contact-form__input _message" 
+              cols="30" 
+              rows="10" 
+              maxlength=100 
+              wrap="hard"
+              name="messageName"
+              tabindex="4" 
+              value="MESSAGE*">
+            </textarea>
+            <!-- <a href="#" class="contact-form__button _accent _left">
               send message
-            </a>
+            </a> -->
+            <button 
+              type="submit"
+              tabindex="5"  
+              value="кнопка Submit"
+              class="contact-form__button _accent _left">
+                Отправить
+            </button>
+            <datalist id="EmailList">
+              <option value="aaaaaa@aaaaa.ru">111111</option>
+              <option value="bbbbbb@bbbbb.ru">222222</option>
+              <option value="cccccc@ccccc.ru">333333</option>
+            </datalist>
           </form>
         </div>
 
@@ -615,6 +667,26 @@
   </div>
 
   <script src="js/flickity.js"></script>
+  <script src="js/axios.min.js"></script>
+  <script>
+       const form = document.getElementById('formId');
+         form.addEventListener("submit", function (event) 
+         {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const parsedForm = event.target.querySelectorAll('input, textarea');
+            console.log(parsedForm);         
+                       
+            const prsObj = {};
+            for (let val of parsedForm) {
+              prsObj[val.name] = val.value;
+            }
+            console.log(prsObj);
+          
+          }                 
+      );
+  </script>
 </body>
 
 </html>
