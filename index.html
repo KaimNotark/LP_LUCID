@@ -580,13 +580,13 @@
             </li>
           </ul>
           <form 
-            class="contact__form" 
-            action="" 
-            method="POST"
+            class="contact-form"             
+            id="formId"
+            <!-- method="POST"
             enctype="application/x-www-form-urlencoded"
-            action="http://httpbin.org/get"
-            autocomplete="on"
-            id="formId">
+            action="http://localhost:5000/call"
+            autocomplete="on" -->
+            >
             <input 
               class="contact-form__input" 
               type="text" 
@@ -674,19 +674,59 @@
          {
             event.preventDefault();
             event.stopPropagation();
-            
-            const parsedForm = event.target.querySelectorAll('input, textarea');
-            console.log(parsedForm);         
-                       
-            const prsObj = {};
-            for (let val of parsedForm) {
-              prsObj[val.name] = val.value;
+/*
+            const { PORT } = require('../../config');
+
+            const bodyParser = require('body-parser');
+            const server     = require('restana')({});
+
+            server.use(bodyParser.json());
+            server.post('/call', ({ body } , { send }) => {
+            if (body && body.email && body.phone && body.message) {
+              return send('Ура, всё верно!' , 201);
             }
-            console.log(prsObj);
-          
+            return send('Упс... Ошибка в данных!', 500);
+          });
+          server.start(PORT);
+          console.log('Server is running at port ' + PORT);
+
+            axios.post('http://localhost:5000/call', 
+              ({ name } , { value }) => {
+            if ( && body.email && body.phone && body.message) {
+              return send('Ура, всё верно!' , 201);
+            }
+            return send('Упс... Ошибка в данных!', 500);
+          });
+          */
+          const parsedForm = event.target.querySelectorAll('input, textarea');
+            console.log(parsedForm); 
+
+         const prsObj = {};
+         for (let val of parsedForm) {
+           prsObj[val.name] = val.value;
+         }
+         console.log(prsObj);
+
+            axios.post('http://localhost:5000/call', 
+            {
+   "email": "email@qwd.ru",
+   "phone": "+79999998877",
+   "message": "dqowkdpoqkwdpoqkwdk"
+ } ) 
+            
+            .then( response => { 
+            console.log(response);
+            alert("всё хорошо, сервер принял запрос") 
+            }) 
+            .catch( error => { 
+            console.error(error);
+            alert("что-то пошло не так, сервер запрос не принял") 
+            });
+
           }                 
       );
   </script>
+    
 </body>
 
 </html>
