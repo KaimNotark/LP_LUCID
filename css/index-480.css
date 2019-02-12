@@ -33,11 +33,11 @@ body {
   height: 30px;
 }
 
-.header>.container {
+/* .header>.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 .container {
   width: 100%;
@@ -53,8 +53,9 @@ body {
 
 .logo__lucid {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 32px;
   text-transform: uppercase;
+  margin-left: 3%;
 }
 
 .logo__ot {
@@ -62,26 +63,30 @@ body {
   margin-top: 3px;
   width: 60px;
   color: #58585d;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
-.header-menu {}
+.header-menu {
+  margin-top: 30px;
+}
 
 .header-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-item {
-  margin-left: 20px;
+  margin: 0 2%;
   display: block;
 }
 
 .header-item__link {
   color: #fffefe;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 22px;
+  letter-spacing: 2px;
   text-decoration: none;
   position: relative;
 }
@@ -113,7 +118,7 @@ body {
 .main {}
 
 .hello {
-  height: 685px;
+  height: 1030px;
   padding-top: 170px;
   font-family: 'Myriad Pro Regular', sans-serif;
   background-image: url('../img/hello-backgrnd.jpg');
@@ -125,7 +130,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .hello-column {
@@ -136,16 +141,16 @@ body {
 .customize__title ,
 .details__title {
   margin-bottom: 25px;
-  margin-top: 50px;
+  margin-top: 0px;
   color: #008ed6;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-align: left;
+  text-align: center;
 }
 .hello__title._pt70 {
-  padding-top: 70px;
+  padding-top: 130px;
 }
 .contact__title,
 .overview__title,
@@ -186,22 +191,25 @@ body {
 .hello__sub-title {
   margin-bottom: 20px;
   color: #ffffff;
-  font-size: 47px;
-  width: 500px;
+  font-size: 55px;
+  width: 80%;
+  margin-left: 10%;
   font-weight: normal;
   line-height: 1.0;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .hello__content {
   margin-bottom: 60px;
-  width: 500px;
+  width: 80%;
+  margin-left: 10%;
   color: #999999;
-  font-size: 15px;
+  font-size: 23px;
   font-weight: normal;
   line-height: 1.6;
   letter-spacing: 1px;
-  text-align: left;
+  text-align: center;
 }
 
 .pricings__sub-title._white {
@@ -234,17 +242,19 @@ body {
 
 .hello__footer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hello__button,
 .price-item__button,
 .contact-form__button {
   display: block;
-  height: 47px;
+  height: 80px;
   padding: 0 25px;  
   color: #fff;
-  font-size: 12px;
-  line-height: 47px;
+  font-size: 20px;
+  line-height: 80px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -254,7 +264,7 @@ body {
   transition:
     background-color .1s ease,
     border-color .3s ease;  
-  width: 160px;
+  width: 270px;
 }
 
 .price-item__button._txt-blue {
@@ -264,7 +274,7 @@ body {
 }
 
 .hello__button._right {
-  margin-right: 15px;
+  margin-right: 35px;
 }
 .contact-form__button._left {
   margin-left: 535px;
@@ -286,15 +296,17 @@ body {
 }
 
 .hello__picture {
-  width: 100%;
-  max-width: 450px;
-  margin-right: 10px;
-}
-.hello__pic-480 {
   width: 0%;
   max-width: 0px;
   visibility: hidden;
 }
+.hello__pic-480 {
+  width: 100%;
+  max-width: 450px;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
 .overview {
   width: 100%;
   font-family: 'Myriad Pro Regular', sans-serif;
