@@ -51,7 +51,7 @@
   .hello__title._pt70 {
     padding-top: 110px;
   }
-
+  
   .hello__sub-title {
     font-size: 38px;
     width: 90%;
@@ -85,6 +85,101 @@
     padding-bottom: 50px;
     margin: 0 auto;
     visibility: visible;
+  }
+  .overview-list {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .overview-item__content {
+    width: 100%;
+  }
+  .overview-item {
+    width: 43%;
+  }
+
+  .details__image,
+  .customize__image {
+    width: 70%;
+    margin-right: 0px;
+    margin-left: 15%;
+    margin-bottom: 25px;
+  }
+  .details__column {
+    margin-right: 0px;
+  }
+  .details__sub-title,
+  .customize__sub-title {
+    margin-left: 5%;
+  }
+  .details__devider,
+  .customize__devider {
+    left: 5%;
+  }
+  .details__content,
+  .customize__content,
+  .like__text {
+    margin-left: 5%;
+    width: 90%;
+  }
+  .details-list {
+    margin-left: 5%;
+  }
+  .customize {
+    padding-bottom: 0%;
+  }
+  .like__buttons {
+    margin-top: 50px;
+  }
+
+  .price-list {
+    margin-left: 5%;
+    width: 90%;
+  }
+  .price-item {
+    width: 48%;
+    margin-bottom: 4%;
+  }
+  
+  .price-item__price {
+    width: 101%;
+  }
+
+  .contact-list {
+    margin-left: 0px;
+  }
+  .contact-item {
+    padding-bottom: 5%;
+  }
+  .contact-item__content {
+    margin-top: 10px;
+  }
+  .contact__form {
+    width: 90%;
+    height: 575px;
+  }
+  .contact-form__input {
+    margin-left: 0%;
+  }
+  .contact-form__input._message {
+    margin: 0 0 5% 0%;
+    width: 313px;
+  }
+  .contact-form__button._left {
+    margin-left: 152px;
+  }
+  .carousel__content {
+    font-size: 15px;
+    margin-left: 5%;
+  }
+  .carousel__picture {
+    margin-left: 5%;
+  }
+  .carousel__autor {
+    margin-left: 5%;
+  }
+  .carousel__cell {
+   /* 1 cell in group */
+   width: calc( ( 100% - 0px ) / 1);
   }
 
 }/* } @media */

@@ -8,15 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/index.css"/>
   <link rel="stylesheet" href="css/index-480.css" />
-<!--
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/index.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/index-480.css" />
- 
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px), only screen and (min-width: 481px)" href="css/index.css"/>
-  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px), only screen and (max-width: 480px)" href="css/index-480.css" /> 
--->
-
-  <link rel="stylesheet" href="css/flickity.css"/>
+  <link rel="stylesheet" href="css/flickity.css" media="screen"/>
 </head>
 
 <body>
@@ -275,7 +267,10 @@
           <div class="carousel" data-flickity='{
                     "autoPlay": true, 
                     "wrapAround": true,
-                    "groupCells": 2
+                    "groupCells": true,
+                    "pageDots": true,
+                    "resize": true,                    
+                    "prevNextButtons": false
                   }'>
             <div class="carousel__cell">
               <p class="carousel__content">
@@ -592,14 +587,61 @@
               </p>
             </li>
           </ul>
-          <form class="contact__form" action="" method="POST">
-            <input class="contact-form__input" type="text" name="name" value="NAME*" />
-            <input class="contact-form__input" type="email" name="email" value="EMAIL*" />
-            <input class="contact-form__input" type="text" name="subject" value="SUBJECT*" />
-            <input class="contact-form__input _message" type="text" name="message" value="MESSAGE*" />
+          <form   class="contact__form" 
+                  method="POST"
+                  enctype="application/x-www-form-urlencoded"
+                  action="http://httpbin.org/get"
+                  autocomplete="on"
+                  id="formId">
+<div class="container row">
+  <div class="column">
+            <input  class="contact-form__input" 
+                    type="text" 
+                    name="nameName" 
+                    autocomplete="on" 
+                    required size="38" 
+                    spellcheck="true" 
+                    placeholder="NAME*"
+                    />
+            <!-- <label class="label-name">NAME*</label> -->
+
+            <input  class="contact-form__input" 
+                    type="email" 
+                    placeholder="EMAIL*" 
+                    name="emailName" 
+                    required size="38"
+                    autocomplete="shipping email" 
+                    list="EmailList"/>
+
+            <input  class="contact-form__input" 
+                    type="text" 
+                    name="subjectName" 
+                    autocomplete="on" 
+                    required size="38" 
+                    spellcheck="true" 
+                    placeholder="SUBJECT*"/>
+  </div>
+  <div class="column">
+            <textarea 
+              class="contact-form__input _message"
+              name="messageName" 
+              cols="38" 
+              maxlength=500 
+              wrap="hard"> MESSAGE*
+            </textarea>
+
             <a href="#" class="contact-form__button _accent _left">
               send message
             </a>
+  </div>
+      </div> <!-- /container  -->
+
+        <datalist id="EmailList">
+          <option value="aaaaaa@aaaaa.ru">111111</option>
+          <option value="bbbbbb@bbbbb.ru">222222</option>
+          <option value="cccccc@ccccc.ru">333333</option>
+        </datalist>
+        
           </form>
         </div>
 

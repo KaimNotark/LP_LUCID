@@ -266,9 +266,6 @@ body {
 .hello__button._right {
   margin-right: 15px;
 }
-.contact-form__button._left {
-  margin-left: 535px;
-}
 
 .like__buttons {
   display: flex;
@@ -490,7 +487,9 @@ body {
 }
 
 .carousel__cell {
-  width: 100%;
+  /* 2 cells in group */
+  width: calc( ( 100% - 0px ) / 2);
+  /* width: 100%; */
   height: 300px;
   border-radius: 5px;
   counter-increment: gallery-cell;
@@ -507,12 +506,12 @@ body {
   letter-spacing: 1px;
   text-align: left;
 }
-
+/* 
 @media screen and (min-width: 768px) {
   .carousel__cell {
     width: 50%;
   }
-}
+} */
 
 .carousel__picture {
   display: block;
@@ -552,7 +551,7 @@ body {
 .like__text {
   color: #fff;
   font-size: 34px;
-  line-height: 1.0;
+  line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
 }
@@ -668,7 +667,7 @@ body {
 }
 
 ._pointer {
-  margin: 0 220px;
+  margin: 0 20%;
 }
 
 .contact-item__image {}
@@ -701,26 +700,39 @@ body {
 .contact-form__input {
   display: block;
   height: 50px;
-  width: 300px;
   margin-bottom: 20px;
   margin-left: 75px;
   padding-left: 20px;
   color: #444348;
   font-size: 12px;
   font-weight: bold;
-  text-transform: uppercase;
   border: 1px solid #444348;
   border-radius: 4px;
   background-color: #15141a;
+} 
+.label-name {
+  color: #444348;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
 }
 
+.contact-form__input._message {
+  margin: 0 75px 20px 0;
+  height: 190px;
+}
+
+.contact-form__button._left {
+  margin-left: 140px;
+}
+/* 
 ._message {
   position: absolute;
   margin-left: 395px;
   margin-top: -210px;
   height: 190px;
   padding-bottom: 140px;
-}
+} */
 
 .footer {
   background-color: #15141a;
