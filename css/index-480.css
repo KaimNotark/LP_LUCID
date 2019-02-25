@@ -159,7 +159,15 @@
   }
   .contact-form__input {
     margin-left: 0%;
+    width: 313px;
   }
+  .contact-form__span {
+    left: 20px;
+  }
+.contact-form__input:placeholder-shown:focus + .contact-form__span,
+.contact-form__input:not(:placeholder-shown) + .contact-form__span {
+    left: 15px;
+}
   .contact-form__input._message {
     margin: 0 0 5% 0%;
     width: 313px;

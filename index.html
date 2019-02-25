@@ -595,41 +595,48 @@
                   id="formId">
 <div class="container row">
   <div class="column">
+          <label class="contact-form__label">
             <input  class="contact-form__input" 
                     type="text" 
                     name="nameName" 
-                    autocomplete="on" 
-                    required size="38" 
-                    spellcheck="true" 
-                    placeholder="NAME*"
-                    />
-            <!-- <label class="label-name">NAME*</label> -->
-
+                    autocomplete="on"
+                    placeholder="&nbsp;"
+                    spellcheck="true" />
+            <span class="contact-form__span">NAME*</span>
+          </label>
+      
+          <label class="contact-form__label">
             <input  class="contact-form__input" 
                     type="email" 
-                    placeholder="EMAIL*" 
-                    name="emailName" 
-                    required size="38"
-                    autocomplete="shipping email" 
+                    name="emailName"
+                    autocomplete="off"
+                    placeholder="&nbsp;" 
                     list="EmailList"/>
-
+            <span class="contact-form__span">EMAIL*</span>
+          </label>
+      
+          <label class="contact-form__label">
             <input  class="contact-form__input" 
                     type="text" 
                     name="subjectName" 
-                    autocomplete="on" 
-                    required size="38" 
-                    spellcheck="true" 
-                    placeholder="SUBJECT*"/>
-  </div>
+                    autocomplete="on"
+                    placeholder="&nbsp;" 
+                    spellcheck="true" />
+            <span class="contact-form__span">SUBJECT*</span>
+          </label>
+      
+  </div><!--/column-->
   <div class="column">
+    <label class="contact-form__label">
             <textarea 
               class="contact-form__input _message"
-              name="messageName" 
-              cols="38" 
-              maxlength=500 
-              wrap="hard"> MESSAGE*
-            </textarea>
-
+              name="messageName"                
+              maxlength="500"
+              placeholder="&nbsp;" 
+              wrap="hard"></textarea>
+            <span class="contact-form__span-mes">MESSAGE*</span>
+          </label>
+      
             <a href="#" class="contact-form__button _accent _left">
               send message
             </a>
