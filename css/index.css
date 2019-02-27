@@ -518,7 +518,9 @@ body {
   width: 59px;
   height: 59px;
 }
+.carousel__signature {
 
+}
 .carousel__autor {
   display: block;
   position: absolute;
@@ -531,11 +533,15 @@ body {
   top: 110px;
 }
 
-._job {
+.carousel__job {
+  display: block;
+  position: absolute;
   color: #fff;
   font-size: 12px;
   letter-spacing: 2px;
   text-align: left;
+  left: 80px;
+  top: 140px;
   text-transform: uppercase;
 }
 
@@ -649,7 +655,7 @@ body {
   background-color: #ededed;
   border: 1px solid #ededed;
   padding-top: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 2px;
 }
 
 .contact-list {
