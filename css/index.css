@@ -811,3 +811,24 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
+
+.signature {
+  display: flex;
+}
+
+.signature__column {}
+
+.signature__avatar {}
+
+.signature__autor {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+.signature__job {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
