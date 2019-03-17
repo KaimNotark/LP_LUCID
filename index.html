@@ -622,8 +622,7 @@
               wrap="hard"
               name="messageName"
               tabindex="4" 
-              value="MESSAGE*">
-            </textarea>
+              value="MESSAGE*"></textarea>
             <!-- <a href="#" class="contact-form__button _accent _left">
               send message
             </a> -->
@@ -697,6 +696,17 @@
             }
             return send('Упс... Ошибка в данных!', 500);
           });
+
+
+ {
+   "email": "email@qwd.ru",
+   "phone": "+79999998877",
+   "message": "dqowkdpoqkwdpoqkwdk"
+ }
+ axios.post('http://localhost:5000/call', 
+            prsObj
+            
+            ) 
           */
           const parsedForm = event.target.querySelectorAll('input, textarea');
             console.log(parsedForm); 
@@ -706,13 +716,11 @@
            prsObj[val.name] = val.value;
          }
          console.log(prsObj);
-
-            axios.post('http://localhost:5000/call', 
-            {
-   "email": "email@qwd.ru",
-   "phone": "+79999998877",
-   "message": "dqowkdpoqkwdpoqkwdk"
- } ) 
+        
+         axios.post('http://localhost:5000/call', 
+         prsObj
+            ) 
+           
             
             .then( response => { 
             console.log(response);
