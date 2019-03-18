@@ -600,7 +600,7 @@
             <input 
               class="contact-form__input" 
               type="email" 
-              name="emailName"
+              name="email"
               autocomplete="shipping email"
               tabindex="2"
               list="EmailList" 
@@ -608,7 +608,7 @@
             <input 
               class="contact-form__input" 
               type="text" 
-              name="subjectName" 
+              name="phone" 
               value="SUBJECT*" 
               autocomplete="on" 
               required size="33"
@@ -620,7 +620,7 @@
               rows="10" 
               maxlength=100 
               wrap="hard"
-              name="messageName"
+              name="message"
               tabindex="4" 
               value="MESSAGE*"></textarea>
             <!-- <a href="#" class="contact-form__button _accent _left">
@@ -673,41 +673,7 @@
          {
             event.preventDefault();
             event.stopPropagation();
-/*
-            const { PORT } = require('../../config');
 
-            const bodyParser = require('body-parser');
-            const server     = require('restana')({});
-
-            server.use(bodyParser.json());
-            server.post('/call', ({ body } , { send }) => {
-            if (body && body.email && body.phone && body.message) {
-              return send('Ура, всё верно!' , 201);
-            }
-            return send('Упс... Ошибка в данных!', 500);
-          });
-          server.start(PORT);
-          console.log('Server is running at port ' + PORT);
-
-            axios.post('http://localhost:5000/call', 
-              ({ name } , { value }) => {
-            if ( && body.email && body.phone && body.message) {
-              return send('Ура, всё верно!' , 201);
-            }
-            return send('Упс... Ошибка в данных!', 500);
-          });
-
-
- {
-   "email": "email@qwd.ru",
-   "phone": "+79999998877",
-   "message": "dqowkdpoqkwdpoqkwdk"
- }
- axios.post('http://localhost:5000/call', 
-            prsObj
-            
-            ) 
-          */
           const parsedForm = event.target.querySelectorAll('input, textarea');
             console.log(parsedForm); 
 
@@ -717,9 +683,7 @@
          }
          console.log(prsObj);
         
-         axios.post('http://localhost:5000/call', 
-         prsObj
-            ) 
+         axios.post('http://localhost:5000/call', prsObj) 
            
             
             .then( response => { 
