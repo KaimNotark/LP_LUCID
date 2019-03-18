@@ -28,11 +28,13 @@
   }
 
   .header-item {
-    margin: 0 2%;
+    margin: 0 5% 8px 2%;
   }
-
+  .header-item__link {
+    font-size: 16px;
+  }
   .hello {
-    height: 890px;  
+    height: 940px;  
   }
 
   .row {
@@ -72,7 +74,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .hello__button {
+    padding: 0 5px;
+    width: 140px;
+  }
   .hello__picture {
     width: 0%;
     max-width: 0px;
@@ -118,11 +123,16 @@
     left: 5%;
   }
   .details__content,
-  .customize__content,
-  .like__text {
+  .customize__content
+   {
     margin-left: 5%;
     width: 90%;
     font-size: 17px;
+  }
+
+  .like__text {
+    font-size: 20px;
+    margin-left: 5%;
   }
   .details-list {
     margin-left: 5%;
@@ -168,7 +178,7 @@
   }
   .contact-form__input {
     margin-left: 0%;
-    width: 313px;
+    width: 270px;
   }
   .contact-form__span {
     left: 20px;
@@ -177,27 +187,34 @@
 .contact-form__input:not(:placeholder-shown) + .contact-form__span {
     left: 15px;
 }
+
+.contact-form__input:placeholder-shown:focus + .contact-form__span-mes,
+.contact-form__input:not(:placeholder-shown) + .contact-form__span-mes {
+  bottom: 203px;
+  
+}
   .contact-form__input._message {
-    margin: 0 0 5% 0%;
-    width: 313px;
+    margin: 0 0 10px 0px;
+    width: 270px;
   }
   .contact-form__button._left {
-    margin-left: 152px;
+    margin-left: 110px;
+    margin-top: 20px;
   }
   .carousel__content {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 5%;
   }
-  .carousel__picture {
+  .signature__avatar {
     margin-left: 5%;
   }
-  .carousel__autor {
+  .signature__autor {
     margin-left: 5%;
-    margin-top: -20px;
+    margin-top: 70px;
   }
-  .carousel__job {
+  .signature__job {
     margin-left: 5%;
-    margin-top: -20px;
+    margin-top: 70px;
   }
   .carousel__cell {
    /* 1 cell in group */
