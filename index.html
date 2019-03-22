@@ -582,62 +582,63 @@
           <form 
             class="contact-form"             
             id="formId"
-            <!-- method="POST"
+            method="POST"
             enctype="application/x-www-form-urlencoded"
-            action="http://localhost:5000/call"
-            autocomplete="on" -->
+            action="http://httpbin.org/get"
+            autocomplete="on"
             >
-            <input 
-              class="contact-form__input" 
-              type="text" 
-              name="nameName" 
-              value="NAME*" 
-              autocomplete="on" 
-              required size="33" 
-              spellcheck="true"
-              tabindex="1" 
-              autofocus placeholder="Введите текст..."/>
-            <input 
-              class="contact-form__input" 
-              type="email" 
-              name="email"
-              autocomplete="shipping email"
-              tabindex="2"
-              list="EmailList" 
-              value="EMAIL*" />
-            <input 
-              class="contact-form__input" 
-              type="text" 
-              name="phone" 
-              value="SUBJECT*" 
-              autocomplete="on" 
-              required size="33"
-              tabindex="3" 
-              spellcheck="true"/>
-            <textarea 
-              class="contact-form__input _message" 
-              cols="30" 
-              rows="10" 
-              maxlength=100 
-              wrap="hard"
-              name="message"
-              tabindex="4" 
-              value="MESSAGE*"></textarea>
-            <!-- <a href="#" class="contact-form__button _accent _left">
-              send message
-            </a> -->
+            <div class="container row">
+              <div class="column">
+                <label class="contact-form__label">
+                  <input  class="contact-form__input" 
+                          type="text" 
+                          name="nameName" 
+                          autocomplete="on"
+                          placeholder="&nbsp;"
+                          spellcheck="true" />
+                  <span class="contact-form__span">NAME*</span>
+                      </label>
+            
+                <label class="contact-form__label">
+                  <input  class="contact-form__input" 
+                          type="email" 
+                          name="email"
+                          autocomplete="off"
+                          placeholder="&nbsp;" 
+                          />
+                  <span class="contact-form__span">EMAIL*</span>
+                </label>
+            
+                <label class="contact-form__label">
+                  <input  class="contact-form__input" 
+                          type="text" 
+                          name="phone" 
+                          autocomplete="on"
+                          placeholder="&nbsp;" 
+                          spellcheck="true" />
+                  <span class="contact-form__span">SUBJECT*</span>
+                </label>
+            
+        </div><!--/column-->
+        <div class="column">
+          <label class="contact-form__label">
+                <textarea 
+                  class="contact-form__input _message"
+                  name="message"                
+                  maxlength="500"
+                  placeholder="&nbsp;" 
+                  wrap="hard"></textarea>
+                <span class="contact-form__span-mes">MESSAGE*</span>
+              </label>
+          
             <button 
-              type="submit"
-              tabindex="5"  
+              type="submit"  
               value="кнопка Submit"
               class="contact-form__button _accent _left">
                 Отправить
             </button>
-            <datalist id="EmailList">
-              <option value="aaaaaa@aaaaa.ru">111111</option>
-              <option value="bbbbbb@bbbbb.ru">222222</option>
-              <option value="cccccc@ccccc.ru">333333</option>
-            </datalist>
+          </div><!--/column-->
+        </div> <!-- /container  -->  
           </form>
         </div>
 
@@ -683,7 +684,7 @@
          }
          console.log(prsObj);
         
-         axios.post('http://localhost:5000/call', prsObj) 
+         axios.post('http://httpbin.org/get', prsObj) 
            
             
             .then( response => { 
