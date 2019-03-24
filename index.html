@@ -683,17 +683,18 @@
            prsObj[val.name] = val.value;
          }
          console.log(prsObj);
-        
-         axios.post('http://httpbin.org/get', prsObj) 
+
+          axios.post('http://localhost:5000/call', prsObj) 
            
             
             .then( response => { 
-            console.log(response);
-            alert("всё хорошо, сервер принял запрос") 
+            console.log(response);            
+            // "всё хорошо, сервер принял запрос"
+            alert(response.data) 
             }) 
-            .catch( error => { 
-            console.error(error);
-            alert("что-то пошло не так, сервер запрос не принял") 
+            .catch( error => {
+            console.error(error.response.data);
+            alert(error.response.data) 
             });
 
           }                 
