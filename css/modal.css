@@ -1,0 +1,76 @@
+.modal__btn-div {
+  visibility: hidden;
+  opacity: 0;
+  /* по умолчанию модальное окно прозрачно */
+  position: fixed;
+  /* фиксированное положение */
+  z-index: 10;
+  top: 3%;
+  right: 10%;
+  /* bottom: 0; */
+  /* left: 0; */
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* цвет фона */
+  transition: /* анимация перехода */
+  visibility 200ms ease-in, opacity 200ms ease-in;
+}
+.modal__btn-div._visible {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.modal__btn-open {
+  
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  /* по умолчанию модальное окно прозрачно */
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* цвет фона */
+  transition: /* анимация перехода */
+  visibility 200ms ease-in, opacity 200ms ease-in;
+}
+
+.modal._opened {
+  visibility: visible;
+  opacity: 1;
+  overflow-y: auto;
+}
+
+.modal__overlay {}
+
+.modal__dialog {}
+
+.modal__content {}
+
+.modal__header {}
+
+.modal-logo {}
+
+.modal-logo__lucid {}
+
+.modal-logo__ot {}
+
+.modal-close {}
+
+.modal-main {}
+
+.modal-menu {}
+
+.modal-list {}
+
+.modal-item {}
+
+.modal-item__link {}
+
+.modal-footer {}
+
+.modal-footer-p {}

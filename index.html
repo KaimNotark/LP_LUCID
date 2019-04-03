@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/sweetalert2.min.css" />
   <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/index-480.css" />
   <link rel="stylesheet" href="css/flickity.css" media="screen" />
 </head>
@@ -63,7 +64,80 @@
             </li>
           </ul>
         </nav>
-      </div>
+        <!-- modal -->
+        <!-- btn for open modal -->
+        <div id="modalBtn" class="modal__btn-div">
+          <button data-modal="modal__data-modal" class="modal__btn-open">menu</button>
+        </div>
+        <!-- само модальное окно -->
+        <div id="modal-1" class="modal">
+          <!-- оверлей (подложка) кликая по нему модалка должна закрыться -->
+          <div data-modal-close="modal-1" class="modal__overlay"></div>
+
+          <div class="modal__dialog">
+            <div class="modal__content">
+
+              <header class="modal__header">
+                <div class="modal-logo">
+                  <div class="modal-logo__lucid">
+                    lucid
+                  </div>
+                  <div class="modal-logo__ot">
+                    onepage
+                    theme
+                  </div>
+                </div>
+                <button data-modal-close="modal-1" title="Close menu" class="modal-close">×</butt>
+              </header>
+
+              <main class="modal-main">
+                <nav class="modal-menu">
+                  <ul class="modal-list">
+                    <li class="modal-item">
+                      <a href="#home" class="modal-item__link">
+                        Home
+                      </a>
+                    </li>
+                    <li class="modal-item">
+                      <a href="#features" class="modal-item__link">
+                        Features
+                      </a>
+                    </li>
+                    <li class="modal-item">
+                      <a href="#about" class="modal-item__link">
+                        About
+                      </a>
+                    </li>
+                    <li class="modal-item">
+                      <a href="#testimonials" class="modal-item__link">
+                        Testimonials
+                      </a>
+                    </li>
+                    <li class="modal-item">
+                      <a href="#pricing" class="modal-item__link">
+                        Pricing
+                      </a>
+                    </li>
+                    <li class="modal-item">
+                      <a href="#contact" class="modal-item__link">
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </main>
+
+              <footer class="modal-footer">
+                <p class="modal-footer-p">
+                  Какая-нибудь поясниловка к основному тексту окна.
+                </p>
+              </footer>
+
+            </div>
+          </div>
+        </div>
+        <!-- /modal -->
+      </div> <!-- /container -->
     </header>
 
     <main class="main">
@@ -623,7 +697,7 @@
         <div class="contact__image">
           <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A661a2694362a0e8ca08ae121271b436438ea9e9b4300e033b820092c5f1bbd12&amp;width=100%25&amp;height=370&amp;lang=ru_RU&amp;scroll=false">
-          </script>
+            </script>
         </div>
 
       </section>
@@ -646,6 +720,7 @@
   </div>
 
   <script src="js/flickity.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/sweetalert2.min.js"></script>
   <script src="js/axios.min.js"></script>
   <script>
