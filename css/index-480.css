@@ -220,5 +220,10 @@
    /* 1 cell in group */
    width: calc( ( 100% - 0px ) / 1);
   }
+  /* modal window */
+  .modal__dialog {
+    position: relative;
+    width: 90%;
+    margin: 100px 5% 100px 5%;
 
 }/* } @media */

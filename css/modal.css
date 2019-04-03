@@ -7,15 +7,17 @@
   right: 10%;
   /* justify-content: center; */
   /* align-items: center; */
-  width: 90px;
-  height: 90px;
-  border-radius: 45px;
-  border: 1px solid #e0e0e0;
-  background-color: #fff;
+  width: 160px;
+  height: 47px;
+  /* background: none; */
+  /* background-color: #000;  */
+  /* border-radius: 45px;
+  border: 1px solid #e0e0e0;*/
   /* position: relative; */
   /* margin: 0 auto; */
-  transition: /* анимация перехода */
-  visibility 200ms ease-in, opacity 200ms ease-in;
+  transition:
+    /* анимация перехода */
+    visibility 200ms ease-in, opacity 200ms ease-in;
 }
 
 .modal__btn-div._visible {
@@ -24,33 +26,46 @@
 }
 
 .modal__btn-open {
-  width: 90px;
-  height: 90px;
-  border-radius: 45px;
-  border: 1px solid #e0e0e0;
-  background-color: #fff;
-  z-index: 9;
+  display: block;
+  height: 47px;
+  padding: 0 25px;  
+  color: rgb(133, 130, 130);
+  font-size: 12px;
+  /* background-color: #008ed6; */
+  background: none;
+  line-height: 47px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid rgb(133, 130, 130);
+  border-radius: 4px;
+  transition:
+    background-color .1s ease,
+    border-color .3s ease;  
+  width: 160px;
 }
+.modal__btn-open:hover {
+  background-color: #008ed6;
+  border-color: #008ed6;
+  color: #ffffff;
+  
+}
+
 .modal-div {
   display: block;
   width: 40px;
-  height: 4px;
-  border: 1px solid #008ed6;
-  background-color: #008ed6;
+  /* height: 4px; */
+  border: 3px solid #008ed6;
+  /* background-color: #008ed6; */
   opacity: 0.7;
   margin-bottom: 10px;
   margin-left: 17px;
 }
+
 ._mt {
   margin-top: 10px;
 }
-/* .modal-span {
-  display: block;
-  width: 20px;
-  height: 3px;
-  border: 1px solid #008ed6;
-  opacity: 0.7;
-} */
 
 .modal {
   visibility: hidden;
@@ -65,14 +80,15 @@
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   /* цвет фона */
-  transition: /* анимация перехода */
-  visibility 200ms ease-in, opacity 200ms ease-in;
+  transition:
+    /* анимация перехода */
+    visibility 200ms ease-in, opacity 200ms ease-in;
 }
 
 .modal._opened {
   visibility: visible;
   opacity: 1;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .modal__overlay {
@@ -85,9 +101,9 @@
 
 .modal__dialog {
   position: relative;
-  width: 500px;
-  padding: 100px 0px 100px 0px;
-  margin: auto;
+  width: 20%;
+  margin: 100px 40% 100px 40%;
+  /* margin: auto; */
 }
 
 .modal__content {
@@ -95,8 +111,6 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: .3rem;
   outline: 0;
 }
 
@@ -106,28 +120,55 @@
   justify-content: space-between;
   padding: 15px;
   border-bottom: 1px solid #eceeef;
+  background-color: black;
 }
 
-.modal-logo {}
+.modal-logo {
+  display: flex;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  user-select: none;
+}
 
-.modal-logo__lucid {}
+.modal-logo__lucid {
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
 
-.modal-logo__ot {}
+.modal-logo__ot {
+  margin-left: 6px;
+  margin-top: 3px;
+  width: 60px;
+  color: rgb(133, 130, 130);
+  font-size: 9px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
 
 .modal-close {
   float: right;
   font-family: sans-serif;
-  font-size: 24px;
+  text-align: center;
+  border: 1px solid rgb(133, 130, 130);
+  border-radius: 4px;
+  transition:
+    background-color .1s ease,
+    border-color .3s ease;  
+  font-size: 30px;
   font-weight: 700;
   line-height: 1;
-  color: rgb(248, 6, 6);
-  text-shadow: 0 1px 0 #fff;
+  color: #008ed6;
+  /* text-shadow: 0 1px 0 #fff; */
   opacity: .5;
   text-decoration: none;
+  background: none;
 }
 
-.modal-close:focus, .modal-close:hover {
-  color: rgb(248, 6, 6);
+.modal-close:focus,
+.modal-close:hover {
+  background-color: #008ed6;
+  border-color: #008ed6;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
   opacity: 1;
@@ -139,16 +180,27 @@
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
-  border-bottom: 1px solid #eceeef;
+  border-bottom: 3px solid #ededed;
 }
 
 .modal-menu {}
 
 .modal-list {}
 
-.modal-item {}
+.modal-item {
+  display: block;
+}
 
-.modal-item__link {}
+.modal-item__link {
+  color: black;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  letter-spacing: 6px;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+}
 
 .modal-footer {
   position: relative;
@@ -159,5 +211,6 @@
 
 .modal-footer-p {
   font-size: 14px;
-  color: #999999;
+  color: #008ed6;
+  text-align: center;
 }
