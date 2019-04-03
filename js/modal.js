@@ -18,7 +18,6 @@ window.onscroll = function () {
   };
 };
 
-
 // убрать скролл страницы после отображения модального окна
 document.addEventListener("DOMContentLoaded", function () {
   // вычисляем ширину полосы прокрутки и берем ее модуль
@@ -37,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     el.classList.add('_opened'); // добавляем модификатор _opened
     document.body.style.overflow = 'hidden'; // скрываем полосу прокрутки
     document.body.style.marginRight = scrollbar; // компенсируем отсутсвие полосы прокрутки (иначе будет скачкообразнное смещение страницы)
+    btnOpenElem.classList.remove('_visible');
   }
   // функция отрабатывающая закрытие модального окна
   function closeModal(selector) {
@@ -46,18 +46,19 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       document.body.style.overflow = prevBodyOverflow;
       document.body.style.marginRight = 0;
+      btnOpenElem.classList.add('_visible');
     }, 200); // время transition в CSS        
   }
 
   // смотрим на какую кнопку нажали
   // это кнопки вызывающие открытие модалки
   const modalTrigger = Array.from(document.querySelectorAll('[data-modal]')); // формируем массив из всех элементов содержащих data-modal
-  console.log(modalTrigger); // проверяем, что он сформировался
+  console.log('modalTrigger = ' + modalTrigger); // проверяем, что он сформировался
   // перебираем массив и выделяем элемент по которому кликнули
   modalTrigger.forEach(element => {
     element.addEventListener('click', event => {
       const targetModalId = event.target.attributes['data-modal'].value;
-      console.log(targetModalId); // проверяем тот ли это элемент
+      console.log('targetModalId = ' + targetModalId); // проверяем тот ли это элемент
       openModal(targetModalId); // обращаемся к функции, которая откроет модалку
     });
   });
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   modalCloseTrigger.forEach(element => {
     element.addEventListener('click', event => {
       const targetModalId = event.target.attributes['data-modal-close'].value;
-      console.log(targetModalId);
+      console.log('targetModalId = ' + targetModalId);
       closeModal(targetModalId);
     });
   });
