@@ -29,7 +29,11 @@ body {
   font-family: 'Verdana', 'Arial', sans-serif; 
   box-sizing: border-box;
 }
-
+._a-top {
+  /* display: block;
+  padding-top: 70px; */
+  /* height: 0px; */
+}
 .header {
   padding-top: 40px;
   width: 100%;
@@ -478,6 +482,7 @@ body {
   border-bottom: 1px solid #15141a;
   padding-top: 60px;
   padding-bottom: 80px;
+  margin-top: -20px;
 }
 
 /*  css for flickity */
