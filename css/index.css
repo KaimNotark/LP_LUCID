@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+  }
+
 .wrapper *,
 .wrapper *::before,
 .wrapper *::after {
