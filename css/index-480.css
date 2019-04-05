@@ -209,8 +209,8 @@
     width: calc( ( 100% - 0px) / 1);
   }
 ._a-top {
-  display: block;
-  padding-top: 70px;
+  /* display: block;
+  padding-top: 70px; */
 }
 
   /* modal window */
