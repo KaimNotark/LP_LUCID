@@ -208,11 +208,16 @@
     /* 1 cell in group */
     width: calc( ( 100% - 0px) / 1);
   }
+._a-top {
+  display: block;
+  padding-top: 70px;
+}
+
   /* modal window */
   .modal__btn-div {
     top: 2%;
     visibility: visible;
-    opacity: 1;
+    opacity: 0.7;
   }
   .modal__btn-open {}
   .modal__dialog {
