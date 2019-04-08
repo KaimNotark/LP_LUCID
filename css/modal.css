@@ -20,11 +20,6 @@
     visibility 200ms ease-in, opacity 200ms ease-in;
 }
 
-.modal__btn-div._visible {
-  visibility: visible;
-  opacity: 0.7;
-}
-
 .modal__btn-open {
   display: block;
   height: 47px;
