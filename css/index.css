@@ -482,7 +482,7 @@ body {
   border-bottom: 1px solid #15141a;
   padding-top: 60px;
   padding-bottom: 80px;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 /*  css for flickity */
