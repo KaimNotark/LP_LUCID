@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'quicksand';
+  src: url(fonts/quicksand-bold.ttf);
+}
+
+@font-face {
+  font-family: 'ssp-bold';
+  src: url(fonts/source-sans-pro-bold.ttf);
+}
+
+@font-face {
+  font-family: 'ssp-italic';
+  src: url(fonts/source-sans-pro-italic.ttf);
+}
+
+@font-face {
+  font-family: 'ssp-light';
+  src: url(fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'ssp-regular';
+  src: url(fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'ssp-semibold';
+  src: url(fonts/SourceSansPro-Semibold.otf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -55,6 +85,7 @@ body {
   color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
+  font-family: 'quicksand', sans-serif;
 }
 
 .logo__ot {
@@ -65,6 +96,7 @@ body {
   font-size: 9px;
   line-height: 1.2;
   text-transform: uppercase;
+  font-family: 'ssp-regular', sans-serif;
 }
 
 .header-menu {}
@@ -84,6 +116,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   position: relative;
+  font-family: 'ssp-semibold', sans-serif;
 }
 
 .header-item__link:hover::before {
@@ -143,6 +176,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: left;
+  font-family: 'ssp-semibold', sans-serif;
 }
 
 .hello__title._pt70 {
@@ -160,6 +194,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
+  font-family: 'ssp-semibold', sans-serif;
 }
 
 .overview-item__title,
@@ -171,6 +206,7 @@ body {
   line-height: 1.6;
   letter-spacing: 1px;
   text-align: center;
+  font-family: 'ssp-semibold', sans-serif;
 }
 
 .price-item__title {
@@ -182,6 +218,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'ssp-semibold', sans-serif;
 }
 
 .hello__sub-title {
@@ -192,6 +229,7 @@ body {
   font-weight: normal;
   line-height: 1.0;
   letter-spacing: 1px;
+  font-family: 'ssp-bold', sans-serif;
 }
 
 .hello__content {
@@ -203,6 +241,7 @@ body {
   line-height: 1.6;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'ssp-regular', sans-serif;
 }
 
 .pricings__sub-title._white {
@@ -218,6 +257,7 @@ body {
   line-height: 1.0;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'ssp-bold', sans-serif;
 }
 
 .pricings__sub-title,
@@ -231,6 +271,7 @@ body {
   line-height: 1.0;
   letter-spacing: 1px;
   text-align: center;
+  font-family: 'ssp-bold', sans-serif;
 }
 
 .hello__footer {
@@ -383,6 +424,7 @@ body {
   line-height: 1.6;
   letter-spacing: 1px;
   text-align: center;
+  font-family: 'ssp-regular', sans-serif;
 }
 
 .line {
@@ -422,6 +464,7 @@ body {
   line-height: 1.6;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'ssp-regular', sans-serif;
 }
 
 .details-list {
@@ -503,6 +546,7 @@ body {
   font-style: italic;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'ssp-italic', sans-serif;
 }
 
 .signature {
@@ -554,6 +598,7 @@ body {
 .like>h3 {
   width: 70%;
   padding-top: 5px;
+  font-family: 'ssp-semibold', sans-serif;
 }
 
 .like__buttons {
@@ -562,6 +607,8 @@ body {
 
 ._like-thin {
   font-weight: lighter;
+  font-family: 'ssp-light',
+  sans-serif;
 }
 
 .price {
@@ -633,6 +680,7 @@ body {
   font-weight: normal;
   line-height: 1.6;
   text-align: center;
+  font-family: 'ssp-regular', sans-serif;
 }
 
 ._blue,
@@ -676,6 +724,7 @@ body {
   font-weight: normal;
   line-height: 1.6;
   letter-spacing: 1px;
+  font-family: 'ssp-regular', sans-serif;
 }
 
 .contact-form {
@@ -796,4 +845,5 @@ body {
   text-transform: uppercase;
   letter-spacing: 0px;
   text-align: center;
+  font-family: 'ssp-semibold', sans-serif;
 }
