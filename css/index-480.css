@@ -146,10 +146,10 @@
     font-size: 17px;
   }
 
-  .like__text {
+  /* .like__text {
     font-size: 20px;
     margin-left: 5%;
-  }
+  } */
 
   .details-list {
     margin-left: 5%;
@@ -239,21 +239,23 @@
     margin-left: 5%;
   }
 
-  .signature__autor {
-    margin-left: 5%;
-    margin-top: 70px;
-  }
-
-  .signature__job {
-    margin-left: 5%;
-    margin-top: 70px;
-  }
-
   .carousel__cell {
     /* 1 cell in group */
     width: calc((100% - 0px) / 1);
   }
 
+  .like {
+    display: block;
+  }
+
+  .like>h3 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .like__buttons {
+    padding-left: 10%;
+  }
 
   /* modal window */
   .modal-list {

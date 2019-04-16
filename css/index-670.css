@@ -240,17 +240,22 @@
     margin-left: 5%;
   }
 
-  .signature__autor {
-    margin-left: 5%;
-  }
-
-  .signature__job {
-    margin-left: 5%;
-  }
-
   .carousel__cell {
     /* 1 cell in group */
     width: calc((100% - 0px) / 1);
+  }
+
+  .like {
+    display: block;
+  }
+
+  .like>h3 {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .like__buttons {
+    padding-left: 30%;
   }
 
   /* modal window */

@@ -462,28 +462,20 @@
         </div> <!-- /container -->
       </section>
       <section class="like">
-        <div class="container row">
-          <div class="column">
-            <p class="like__text">
-              <span class="_like-bold">
-                Like what you see?
-              </span>
-              <span class="_like-thin">
-                Get this great theme now!
-              </span>
-            </p>
-          </div>
-          <div class="column">
-            <div class="like__buttons">
-              <a href="#" class="hello__button _right">
-                view features
-              </a>
-              <a href="#" class="hello__button _accent">
-                download now
-              </a>
-            </div>
-          </div>
-        </div> <!-- /container -->
+        <h3 class="pricings__sub-title _white">
+          Like what you see?
+          <span class="_like-thin">
+            Get this great theme now!
+          </span>
+        </h3>
+        <div class="like__buttons">
+          <a href="#" class="hello__button _right">
+            view features
+          </a>
+          <a href="#" class="hello__button _accent">
+            download now
+          </a>
+        </div>
       </section>
       <!-- 06 -->
       <section id="pricing" class="price">
@@ -741,8 +733,8 @@
           console.error(error.response.data);
           Swal.fire({
             type: 'error',
-            title: error.response.data,
-            text: 'Что-то пошло не так.',
+            title: 'Что-то пошло не так.',
+            text: error.response.data,
             footer: 'Сервер запрос не принял.'
           })
         });
