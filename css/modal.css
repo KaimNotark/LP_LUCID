@@ -25,11 +25,12 @@
   height: 47px;
   padding: 0 25px;  
   color: rgb(133, 130, 130);
-  font-size: 12px;
+  font-size: 14px;
   /* background-color: #008ed6; */
   background: none;
   line-height: 47px;
   font-weight: bold;
+  font-family: 'ssp-bold';
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -107,6 +108,7 @@
   flex-direction: column;
   background-color: #fff;
   outline: 0;
+  font-family: 'ssp-regular';
 }
 
 .modal__header {
@@ -120,7 +122,6 @@
 
 .modal-logo {
   display: flex;
-  font-family: 'Myriad Pro Regular', sans-serif;
   user-select: none;
 }
 
@@ -128,6 +129,7 @@
   color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
+  font-family: 'quicksand';
 }
 
 .modal-logo__ot {
@@ -137,7 +139,9 @@
   color: rgb(133, 130, 130);
   font-size: 9px;
   line-height: 1.2;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
+  font-family: 'ssp-regular';
 }
 
 .modal-close {
@@ -195,6 +199,7 @@
   text-align: left;
   text-decoration: none;
   position: relative;
+  font-family: 'ssp-regular';
 }
 
 .modal-footer {
@@ -202,10 +207,13 @@
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
+  font-family: 'ssp-regular';
+  
 }
 
 .modal-footer-p {
   font-size: 14px;
   color: #008ed6;
   text-align: center;
+  letter-spacing: 2px;
 }
