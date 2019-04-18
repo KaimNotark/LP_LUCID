@@ -675,6 +675,7 @@ body {
 
 .contact-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 55px;
   padding: 0;
