@@ -32,11 +32,19 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrapper *, .wrapper *::before, .wrapper *::after {
+.wrapper *,
+.wrapper *::before,
+.wrapper *::after {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -51,7 +59,6 @@ body {
 .header {
   padding-top: 40px;
   width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   height: 30px;
 }
 
@@ -62,14 +69,12 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1160px;
   margin: 0 auto;
 }
 
 .logo {
   display: flex;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   user-select: none;
 }
 
@@ -91,8 +96,6 @@ body {
   text-transform: uppercase;
   font-family: 'ssp-regular';
 }
-
-.header-menu {}
 
 .header-list {
   display: flex;
@@ -136,12 +139,9 @@ body {
   text-decoration: none;
 }
 
-.main {}
-
 .hello {
   height: 685px;
   padding-top: 170px;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-image: url('../img/hello-backgrnd.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,7 +150,6 @@ body {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -158,7 +157,9 @@ body {
   margin-top: -70px;
 }
 
-.hello__title, .customize__title, .details__title {
+.hello__title,
+.customize__title,
+.details__title {
   margin-bottom: 25px;
   margin-top: 50px;
   color: #008ed6;
@@ -174,7 +175,10 @@ body {
   padding-top: 70px;
 }
 
-.contact__title, .overview__title, .pricings__title, .price__title {
+.contact__title,
+.overview__title,
+.pricings__title,
+.price__title {
   margin-bottom: 20px;
   color: #008ed6;
   font-size: 13px;
@@ -185,11 +189,11 @@ body {
   font-family: 'ssp-bold';
 }
 
-.overview-item__title, .details-list__title {
+.overview-item__title,
+.details-list__title {
   margin-top: 30px;
   color: #1a1a1a;
   font-size: 22px;
-  font-weight: normal;
   line-height: 1.6;
   letter-spacing: 1px;
   text-align: center;
@@ -227,7 +231,6 @@ body {
   font-weight: normal;
   line-height: 1.6;
   letter-spacing: 1px;
-  text-align: left;
   font-family: 'ssp-regular';
 }
 
@@ -235,7 +238,8 @@ body {
   color: #ffffff;
 }
 
-.customize__sub-title, .details__sub-title {
+.customize__sub-title,
+.details__sub-title {
   margin-bottom: 25px;
   color: #1a1a1a;
   font-size: 34px;
@@ -246,7 +250,10 @@ body {
   font-family: 'ssp-semibold';
 }
 
-.pricings__sub-title, .contact__sub-title, .overview__sub-title, .price__sub-title {
+.pricings__sub-title,
+.contact__sub-title,
+.overview__sub-title,
+.price__sub-title {
   margin-bottom: 40px;
   color: #1a1a1a;
   font-size: 34px;
@@ -261,7 +268,9 @@ body {
   display: flex;
 }
 
-.hello__button, .price-item__button, .contact-form__button {
+.hello__button,
+.price-item__button,
+.contact-form__button {
   display: block;
   height: 47px;
   padding: 0 25px;
@@ -294,7 +303,11 @@ body {
   margin-top: -5px;
 }
 
-.price-item__button:hover, .price-item__button._accent, .hello__button:hover, .hello__button._accent, .contact-form__button._accent {
+.price-item__button:hover,
+.price-item__button._accent,
+.hello__button:hover,
+.hello__button._accent,
+.contact-form__button._accent {
   background-color: #008ed6;
   border-color: #008ed6;
   color: #ffffff;
@@ -313,22 +326,24 @@ body {
 }
 
 .overview {
-  width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-color: #ffffff;
   border: 1px solid #fff;
   padding-top: 60px;
   padding-bottom: 30px;
 }
 
-.overview__devider, .pricings__devider, .price__devider, .contact__devider {
+.overview__devider,
+.pricings__devider,
+.price__devider,
+.contact__devider {
   position: relative;
   margin: 0 auto;
   width: 45px;
   height: 4px;
 }
 
-.customize__devider, .details__devider {
+.customize__devider,
+.details__devider {
   position: relative;
   margin: 0;
   width: 45px;
@@ -336,7 +351,12 @@ body {
   left: 0;
 }
 
-.contact__devider::before, .price__devider::before, .pricings__devider::before, .customize__devider::before, .details__devider::before, .overview__devider::before {
+.contact__devider::before,
+.price__devider::before,
+.pricings__devider::before,
+.customize__devider::before,
+.details__devider::before,
+.overview__devider::before {
   content: "";
   position: absolute;
   right: 0;
@@ -345,7 +365,12 @@ body {
   background-color: #008ed6;
 }
 
-.contact__devider::after, .price__devider::after, .pricings__devider::after, .customize__devider::after, .details__devider::after, .overview__devider::after {
+.contact__devider::after,
+.price__devider::after,
+.pricings__devider::after,
+.customize__devider::after,
+.details__devider::after,
+.overview__devider::after {
   content: "";
   position: absolute;
   left: 0;
@@ -374,7 +399,6 @@ body {
   height: 90px;
   border-radius: 45px;
   border: 1px solid #e0e0e0;
-  position: relative;
   margin: 0 auto;
 }
 
@@ -400,8 +424,6 @@ body {
 }
 
 .details {
-  width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 30px;
@@ -417,7 +439,8 @@ body {
   margin-right: 70px;
 }
 
-.details__content, .customize__content {
+.details__content,
+.customize__content {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 484px;
@@ -458,8 +481,6 @@ body {
 }
 
 .customize {
-  width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-color: #f2f2f2;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -471,8 +492,6 @@ body {
 }
 
 .pricings {
-  width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-color: #ffffff;
   background-image: url('../img/pricings-warstwa8.jpg');
   background-repeat: no-repeat;
@@ -534,9 +553,6 @@ body {
   font-size: 16px;
   line-height: 1.8;
   padding-bottom: 5px;
-  /* text-align: left;
-  left: 80px;
-  top: 90px; */
   font-family: 'ssp-regular';
 }
 
@@ -552,8 +568,6 @@ body {
 
 .like {
   display: flex;
-  width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-color: #15141a;
   border: 1px solid #15141a;
   padding-top: 70px;
@@ -576,8 +590,6 @@ body {
 }
 
 .price {
-  width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-color: #ffffff;
   border: 1px solid #fff;
   padding-top: 60px;
@@ -649,13 +661,12 @@ body {
   font-family: 'ssp-regular';
 }
 
-._blue, ._accent-blue {
+._blue,
+._accent-blue {
   color: #008ed6;
 }
 
 .contact {
-  width: 100%;
-  /* font-family: 'Myriad Pro Regular', sans-serif; */
   background-color: #ededed;
   border: 1px solid #ededed;
   padding-top: 60px;
@@ -664,7 +675,6 @@ body {
 
 .contact-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 55px;
   padding: 0;
@@ -679,8 +689,6 @@ body {
 ._pointer {
   margin: 0 20%;
 }
-
-.contact-item__image {}
 
 .contact-item__content {
   margin-top: 30px;
@@ -739,13 +747,15 @@ body {
   font-family: 'ssp-bold';
 }
 
-.contact-form__input:placeholder-shown:focus+.contact-form__span, .contact-form__input:not(:placeholder-shown)+.contact-form__span {
+.contact-form__input:placeholder-shown:focus+.contact-form__span,
+.contact-form__input:not(:placeholder-shown)+.contact-form__span {
   bottom: 72px;
   font-size: 70%;
   left: 85px;
 }
 
-.contact-form__input:placeholder-shown:focus+.contact-form__span-mes, .contact-form__input:not(:placeholder-shown)+.contact-form__span-mes {
+.contact-form__input:placeholder-shown:focus+.contact-form__span-mes,
+.contact-form__input:not(:placeholder-shown)+.contact-form__span-mes {
   bottom: 213px;
   font-size: 70%;
   left: 15px;
@@ -773,8 +783,6 @@ body {
   margin-left: 140px;
 }
 
-._message {}
-
 .footer {
   background-color: #15141a;
   border: 1px solid #15141a;
@@ -785,7 +793,6 @@ body {
 .footer-list {
   padding-left: 0%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
