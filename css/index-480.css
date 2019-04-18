@@ -146,11 +146,6 @@
     font-size: 17px;
   }
 
-  /* .like__text {
-    font-size: 20px;
-    margin-left: 5%;
-  } */
-
   .details-list {
     margin-left: 5%;
   }
@@ -282,8 +277,6 @@
     visibility: visible;
     opacity: 0.7;
   }
-
-  .modal__btn-open {}
 
   .modal__dialog {
     position: relative;
