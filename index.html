@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/index-480.css" />
+  <link rel="stylesheet" href="css/index-670.css" />
   <link rel="stylesheet" href="css/flickity.css" media="screen" />
 </head>
 
 <body>
 
   <div id="wrapper" class="wrapper">
-    <a name="home">&nbsp;</a>
+
     <header class="header">
       <div class="container">
 
@@ -92,7 +93,7 @@
                 <button data-modal-close="modal-window" title="Close menu" class="modal-close">×</butt>
               </header>
 
-              <main class="modal-main">
+              <div class="modal-main">
                 <nav class="modal-menu">
                   <ul class="modal-list">
                     <li class="modal-item">
@@ -127,7 +128,7 @@
                     </li>
                   </ul>
                 </nav>
-              </main>
+              </div>
 
               <footer class="modal-footer">
                 <p class="modal-footer-p">
@@ -137,14 +138,13 @@
 
             </div>
           </div>
-        </div>
-        <!-- /modal -->
+        </div> <!-- /modal -->
       </div> <!-- /container -->
     </header>
 
     <main class="main">
       <!-- 01 -->
-      <section class="hello">
+      <section id="home" class="hello">
         <div class="container row">
 
           <div class="hello-column">
@@ -181,10 +181,8 @@
         </div>
       </section>
       <!-- 02 -->
-      <!-- <a name="features" class="_a-top">&nbsp;</a> -->
       <section id="features" class="overview">
         <div class="container">
-
 
           <h2 class="overview__title">
             product overview
@@ -255,12 +253,9 @@
             </li>
           </ul>
         </div>
-
-
       </section>
       <hr class="line">
       <!-- 03 -->
-      <!-- <a name="about" class="_a-top">&nbsp;</a> -->
       <section id="about" class="details">
         <div class="container row">
 
@@ -331,7 +326,6 @@
         </div>
       </section>
       <!-- 05 -->
-      <!-- <a name="testimonials" class="_a-top">&nbsp;</a> -->
       <section id="testimonials" class="pricings">
         <div class="container">
 
@@ -464,42 +458,26 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!--/carousel-->
-
-        </div>
-        <!--/container-->
-
-
-
+          </div> <!-- /carousel -->
+        </div> <!-- /container -->
       </section>
       <section class="like">
-        <div class="container row">
-          <div class="column">
-            <p class="like__text">
-              <span class="_like-bold">
-                Like what you see?
-              </span>
-              <span class="_like-thin">
-                Get this great theme now!
-              </span>
-            </p>
-          </div>
-          <div class="column">
-            <div class="like__buttons">
-              <a href="#" class="hello__button _right">
-                view features
-              </a>
-              <a href="#" class="hello__button _accent">
-                download now
-              </a>
-            </div>
-          </div>
+        <h3 class="pricings__sub-title _white">
+          Like what you see?
+          <span class="_like-thin">
+            Get this great theme now!
+          </span>
+        </h3>
+        <div class="like__buttons">
+          <a href="#" class="hello__button _right">
+            view features
+          </a>
+          <a href="#" class="hello__button _accent">
+            download now
+          </a>
         </div>
-        <!--/container-->
       </section>
       <!-- 06 -->
-      <!-- <a name="pricing" class="_a-top">&nbsp;</a> -->
       <section id="pricing" class="price">
         <div class="container">
 
@@ -572,7 +550,7 @@
               </h4>
               <p class="price-item__price _accent-white">
                 <span class="_big-accent-white">
-                  <sup class="_sup _accent-white">$</sup>
+                  <sup class="_accent-white _sup">$</sup>
                   50
                 </span>
                 <br>
@@ -620,12 +598,8 @@
             </li>
           </ul>
         </div>
-
-
       </section>
       <!-- 07 -->
-      <!-- <a name="contact" class="_a-top">&nbsp;</a> -->
-
       <section id="contact" class="contact">
         <div class="container">
 
@@ -666,7 +640,7 @@
             <div class="container row">
               <div class="column">
                 <label class="contact-form__label">
-                  <input class="contact-form__input" type="text" name="nameName" autocomplete="on" placeholder="&nbsp;"
+                  <input class="contact-form__input" type="text" name="nameName" autocomplete="off" placeholder="&nbsp;"
                     spellcheck="true" />
                   <span class="contact-form__span">NAME*</span>
                 </label>
@@ -678,13 +652,12 @@
                 </label>
 
                 <label class="contact-form__label">
-                  <input class="contact-form__input" type="text" name="phone" autocomplete="on" placeholder="&nbsp;"
+                  <input class="contact-form__input" type="text" name="phone" autocomplete="off" placeholder="&nbsp;"
                     spellcheck="true" />
                   <span class="contact-form__span">SUBJECT*</span>
                 </label>
 
-              </div>
-              <!--/column-->
+              </div> <!-- /column -->
               <div class="column">
                 <label class="contact-form__label">
                   <textarea class="contact-form__input _message" name="message" maxlength="500" placeholder="&nbsp;"
@@ -693,10 +666,9 @@
                 </label>
 
                 <button type="submit" value="кнопка Submit" class="contact-form__button _accent _left">
-                  Отправить
+                  Send message
                 </button>
-              </div>
-              <!--/column-->
+              </div> <!-- /column -->
             </div> <!-- /container  -->
           </form>
         </div>
@@ -704,7 +676,7 @@
         <div class="contact__image">
           <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A661a2694362a0e8ca08ae121271b436438ea9e9b4300e033b820092c5f1bbd12&amp;width=100%25&amp;height=370&amp;lang=ru_RU&amp;scroll=false">
-            </script>
+          </script>
         </div>
 
       </section>
@@ -744,15 +716,13 @@
         prsObj[val.name] = val.value;
       }
       console.log(prsObj);
-      //  Swal.fire('Any fool can use a computer');
+
 
       axios.post('http://localhost:5000/call', prsObj)
 
 
         .then(response => {
           console.log(response);
-          // "всё хорошо, сервер принял запрос"
-          // alert(response.data)
           Swal.fire(
             response.data,
             'Всё хорошо, сервер принял запрос.',
@@ -761,11 +731,10 @@
         })
         .catch(error => {
           console.error(error.response.data);
-          // alert(error.response.data)
           Swal.fire({
             type: 'error',
-            title: error.response.data,
-            text: 'Что-то пошло не так.',
+            title: 'Что-то пошло не так.',
+            text: error.response.data,
             footer: 'Сервер запрос не принял.'
           })
         });
