@@ -1,0 +1,54 @@
+7. ������� ������
+ctl+t  or ctrl+shift+p
+
++ price-list__item ��������� �� price-item
++ ������ aside
++ ������ ������ � header
++ ��������� �������� �������� ������, ������ ���������
+
+����� �� ������ ��������� �� ����������, ��� �������� �����������
+
+������ ������� �������� �� �����������
+
++ ������ ���������� ����� � ������� ��������
++ � css url � ������� �����
++ ��� ������� ������������ ����� ����������� ����� body
+
+��������� ��� stash and pop in Git
+
+����� ���� �����
+� ����� ������� ��� �������
+����� ������ ����� ������� �������, � � ��������� ������ �����
+� ��������� ������ �� ������ ���� uppercase
+
+<section class="pricings"> 
+<h3 class="pricings__title">Like what you see?<span>Get his great theme now!</span></h3> 
+<a href="#" class="pricings__button">view features</a> 
+<a href="" class="pricings__button">download now</a> 
+</section>
+
+<section class="like">
+        <div class="container row">
+          <div class="column">
+            <p class="like__text">
+              <span class="_like-bold">
+                Like what you see?
+              </span>
+              <span class="_like-thin">
+                Get this great theme now!
+              </span>
+            </p>
+          </div>
+          <div class="column">
+            <div class="like__buttons">
+              <a href="#" class="hello__button _right">
+                view features
+              </a>
+              <a href="#" class="hello__button _accent">
+                download now
+              </a>
+            </div>
+          </div>
+        </div> <!-- /container -->
+      </section>
+
