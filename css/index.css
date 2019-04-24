@@ -131,7 +131,6 @@ body {
 }
 
 .hello {
-  height: 685px;
   padding-top: 170px;
   background-image: url('../img/hello-backgrnd.jpg');
   background-repeat: no-repeat;
@@ -387,8 +386,7 @@ body {
 .details {
   background-color: #ffffff;
   padding-top: 60px;
-  padding-bottom: 30px;
-  height: 690px;
+  padding-bottom: 22px;
 }
 
 .details__image {
@@ -404,7 +402,7 @@ body {
 
 .details__title {
   margin-bottom: 17px;
-  margin-top: 35px;
+  margin-top: 34px;
   color: #008ed6;
   font-size: 13px;
   font-weight: bolder;
@@ -473,8 +471,7 @@ body {
 .customize {
   background-color: #f2f2f2;
   padding-top: 60px;
-  padding-bottom: 60px;
-  height: 535px;
+  padding-bottom: 32px;
 }
 
 .customize__title {
@@ -503,8 +500,7 @@ body {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #15141a;
   padding-top: 60px;
-  padding-bottom: 80px;
-  height: 640px;
+  padding-bottom: 90px;
 }
 
 /*  css for flickity */
@@ -576,8 +572,7 @@ body {
   background-color: #15141a;
   border: 1px solid #15141a;
   padding-top: 70px;
-  padding-bottom: 70px;
-  height: 173px;
+  padding-bottom: 30px;
 }
 
 .like>h3 {
@@ -600,7 +595,6 @@ body {
   border: 1px solid #fff;
   padding-top: 55px;
   padding-bottom: 60px;
-  height: 777px;
 }
 
 .price__sub-title {
@@ -686,7 +680,7 @@ body {
 .contact {
   background-color: #ededed;
   border: 1px solid #ededed;
-  padding-top: 60px;
+  padding-top: 53px;
   padding-bottom: 2px;
 }
 
@@ -825,8 +819,7 @@ body {
   background-color: #15141a;
   border: 1px solid #15141a;
   padding-top: 50px;
-  padding-bottom: 45px;
-  height: 160px;
+  padding-bottom: 35px;
 }
 
 .footer-list {
@@ -850,7 +843,7 @@ body {
 }
 
 .footer-text {
-  margin-top: 30px;
+  margin-top: 22px;
   color: #444348;
   font-size: 14px;
   font-weight: bolder;
